@@ -1,0 +1,7 @@
+USE Company;
+
+SELECT DISTINCT Pno
+FROM EMPLOYEE, WORKS_ON
+WHERE
+	Lname = "Wong" AND
+    Ssn = Essn;

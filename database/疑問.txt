@@ -1,0 +1,7 @@
+
+hw1
+1. innoDB 似乎不能用 Default value, 請問是否都設定成 NULL
+2. MySQL 用 Data import 不會自動建立 Company schema, 是否有問題? (附上輸出的 schema 給助教檢查)
+
+hw2 
+1. Q09 請問是否確定要找的是 Houston, TX，中間有逗號的那個?

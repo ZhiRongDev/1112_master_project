@@ -1,5 +1,4 @@
 import socket
-import sys
 
 host = "127.0.0.1"
 port = 20213
@@ -11,9 +10,9 @@ s.connect((host, port))
 s.send(msg)
 
 while 1:
-    buf = s.recv(1024)
-    buf = buf.decode('utf-8')
-    print(buf)
+    message = s.recv(1024)
+    message = message.decode('utf-8')
+    print(message)
     break
 
 s.close()
