@@ -1,4 +1,2 @@
-USE Company;
-
 SELECT Ssn, Dname
-FROM EMPLOYEE, DEPARTMENT;
+FROM employee, department;

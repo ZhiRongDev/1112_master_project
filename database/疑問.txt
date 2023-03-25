@@ -1,7 +1,12 @@
+助教好，我是這學期修資料庫系統的學生 程至榮
+想要請教作業的問題:
 
-hw1
-1. innoDB 似乎不能用 Default value, 請問是否都設定成 NULL
-2. MySQL 用 Data import 不會自動建立 Company schema, 是否有問題? (附上輸出的 schema 給助教檢查)
+Hw1
+1. 建立 Data Schema 這邊是要求參考課堂 PPT 的第 7 頁去設定，但是 Constraint 的部分我不確定除了主鍵/外來鍵以外，是否有其他規定 (哪些欄位需要設 NOT NULL, 哪些欄位需要設定 Unique, 當 DELETE 或 UPDATE 時要用 SET NULL 或是 SET DEFAULT)。另外我發現 MySQL 使用的 InnoDB 在 ON DELETE 或 ON UPDATE 的時候不能使用 Default value，只能用 SET NULL 或 CASCADE，這樣就會跟課本範例不一樣 (P181 , P234 都是用 SET DEFAULT)。想要請教一下是否有規定要怎麼設 Constraint?
 
-hw2 
-1. Q09 請問是否確定要找的是 Houston, TX，中間有逗號的那個?
+2. 我這邊是使用 Windows 的 MySQL Workbench，按照範例教學使用功能表的 [Server] -> [Data Export] 匯出 Company SQL 檔以後，發現再次用 [Server] -> [Data Import] 匯入 SQL，如果 Database 裡面沒有 Company Schema 的話，並不會自動建立 Company Schema，所以需要預先手動建立 Company Schema 再匯入 SQL。不知道是我這邊的 SQL 檔是錯的，還是助教批改作業時都會預先建 Company Schema? 這邊附上我輸出的 SQL 檔請助教協助測試一下
+
+Hw2 
+1. Q09 請問是否確定要找的是 "Houston, TX"，中間有逗號的那個? HW1 給的資料表裡面有兩種 Address 格式，"Houston, TX" 和 "Houston TX"，不確定有無打錯。
+
+謝謝!

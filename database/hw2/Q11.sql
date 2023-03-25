@@ -1,5 +1,3 @@
-USE Company;
-
 SELECT Dname, Lname, Fname, Pname
 FROM department, employee, works_on, project
 WHERE 

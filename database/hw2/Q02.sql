@@ -1,7 +1,5 @@
-USE Company;
-
 SELECT DISTINCT Pnumber, Dnum, Lname, Address, Bdate
-FROM PROJECT, DEPARTMENT, EMPLOYEE
+FROM project, department, employee
 WHERE 
 	Plocation = "Stafford" AND 
     Dnum = Dnumber AND

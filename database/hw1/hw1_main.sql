@@ -4,8 +4,6 @@ USE Company;
 CREATE TABLE DEPARTMENT (
 	Dname VARCHAR(20) NOT NULL,
 	Dnumber INT NOT NULL,
-    -- Mgr_ssn should can be NULL (foreign key), but the textbook set NOT NULL (it set ON DELETE DEFAULT, page 185)
-    -- Looks like InnoDB cannot use ON DELETE SET DEFAULT or ON UPDATE SET DEFAULT
     Mgr_ssn CHAR(9),
     Mgr_start_date DATE,
     PRIMARY KEY(Dnumber)
@@ -21,7 +19,6 @@ CREATE TABLE EMPLOYEE (
     Sex CHAR,
     Salary DECIMAL(10, 2),
     Super_ssn CHAR(9),
-	-- Dno should can be NULL (FK), but the textbook set NOT NULL (it set ON DELETE DEFAULT, page 185)
     Dno INT,
     PRIMARY KEY(Ssn)
 );
@@ -30,7 +27,6 @@ CREATE TABLE PROJECT (
 	Pname VARCHAR(20) NOT NULL,
     Pnumber INT NOT NULL,
     Plocation VARCHAR(20),
-    -- Dnum should can be NULL (FK), but the textbook set NOT NULL (it set ON DELETE DEFAULT, page 185)
     Dnum INT,
     PRIMARY KEY(Pnumber)
 );

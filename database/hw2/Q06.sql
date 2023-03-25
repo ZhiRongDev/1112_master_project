@@ -1,4 +1,2 @@
-USE Company;
-
 SELECT Ssn, Dno
 FROM EMPLOYEE;

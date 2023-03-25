@@ -1,5 +1,3 @@
-USE Company;
-
 SELECT DISTINCT Fname, Lname, Address
-FROM EMPLOYEE, DEPARTMENT
+FROM employee, department
 WHERE Dno = Dnumber AND Dname = "Research";

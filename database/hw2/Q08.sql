@@ -1,4 +1,2 @@
-USE Company;
-
 SELECT DISTINCT Salary
-FROM EMPLOYEE;
+FROM employee;

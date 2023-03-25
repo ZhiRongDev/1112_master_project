@@ -1,5 +1,3 @@
-USE Company;
-
 SELECT Fname, Lname
-FROM EMPLOYEE
+FROM employee
 WHERE Address Like "%Houston, TX%";
