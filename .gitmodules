@@ -1,3 +1,12 @@
 [submodule "ML_final_project"]
 	path = ML_final_project
 	url = git@github.com:ZhiRongDev/ML_final_project.git
+[submodule "WSM_Project_1"]
+	path = WSM_Project_1
+	url = git@github.com:ZhiRongDev/WSM_Project_1.git
+[submodule "WSM_Project_2"]
+	path = WSM_Project_2
+	url = git@github.com:ZhiRongDev/WSM_project2.git
+[submodule "WSM_OTTO_finalProject"]
+	path = WSM_OTTO_finalProject
+	url = git@github.com:ZhiRongDev/WSM_OTTO_finalProject.git
